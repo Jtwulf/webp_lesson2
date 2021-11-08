@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="author" content="ウルフ 智也">
+    <meta name="description" content="ruby要素の説明ページです。">
+    <title>日本大学文理学部情報科学科 webプログラミング演習2</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="top">
+        <h1>ruby 要素</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="current"><a href="../index.html">Home</a></li>
+            <li><a href="iframe.html">iframe</a></li>
+            <li><a href="ruby.html">ruby</a></li>
+            <li><a href="aside.html">aside</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2 class="subtitle">1. 説明</h2>
+            <p class="explanation">
+                ruby 要素は、ベースとなるテキストの上、下、隣に、
+                小さな脚注で主にアジアでの文字の発音を表す、つまり「ルビ」をふるのに使います。<br>
+                ruby 要素は、それ単体では意味を成さず、次に挙げる要素と組み合わせて使う事で、
+                ルビをふります。
+            </p>
+            <h3 class="subsubtitle">- rb 要素</h3>
+            <p class="explanation">
+                ルビをふるベーステキストを分割する際、このrb 要素で区切ります。
+            </p>
+            <h3 class="subsubtitle">- rt 要素</h3>
+            <p class="explanation">
+                脚注のテキストをベーステキスト毎に分割する際、このrt 要素で区切ります。
+            </p>
+            <h3 class="subsubtitle">- rp 要素</h3>
+            <p class="explanation">
+                rp 要素は、ruby 要素でのルビ表示が対応されていないブラウザにて、
+                代替表示用括弧を提供する為に使います。<br>
+                ほとんどのブラウザがこのrp 要素無しでルビをふる事が出来ますが、
+                より親切なwebページを作成する際はこのrp 要素を使う必要があるでしょう。
+            </p>
+            <h2 class="subtitle">2. マークアップ例</h2>
+            <h3 class="subsubtitle">2-1. HTMLソースコード</h3>
+            <pre class="editor">
+                <code>
+この
+&lt;ruby&gt;地球 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ほし&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+に生まれた2人
+&lt;br&gt;
+出会ったのは
+&lt;ruby&gt;奇跡&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;偶然&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+じゃないよね
+&lt;br&gt;
+でも
+&lt;ruby&gt;右側&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;君の横顔&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+はもう見れない
+&lt;br&gt;
+&lt;ruby&gt;山手通り &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;いつもの帰り道&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+1人で歩いてる
+&lt;br&gt;</code>
+            </pre>
+            <h2 class="subtitle">3. マークアップ結果</h2>
+            この
+            <ruby>地球<rp>(</rp><rt>ほし</rt><rp>)</rp></ruby>
+            に生まれた2人
+            <br>
+            出会ったのは
+            <ruby>奇跡<rp>(</rp><rt>偶然</rt><rp>)</rp></ruby>
+            じゃないよね
+            <br>
+            でも
+            <ruby>右側<rp>(</rp><rt>君の横顔</rt><rp>)</rp></ruby>
+            はもう見れない
+            <br>
+            <ruby>山手通り<rp>(</rp><rt>いつもの帰り道</rt><rp>)</rp></ruby>
+            を1人で歩いてる
+            <br>
+            <br>
+            <p class="explanation">
+                このように、ありがちな歌の当て字もruby 要素で再現出来ました。<br>
+                (※歌詞はチョコレートプラネットのネタ<a href="https://youtu.be/QaWH4v2NEXw">「カラオケ」</a>
+                より引用しました。)
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2021 Tomoya Wulf</p>
+    </footer>
+</body>
+
+</html>

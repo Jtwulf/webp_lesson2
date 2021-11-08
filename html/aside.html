@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="author" content="ウルフ 智也">
+    <meta name="description" content="aside要素の説明ページです。">
+    <title>日本大学文理学部情報科学科 webプログラミング演習2</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="top">
+        <h1>aside 要素</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="current"><a href="../index.html">Home</a></li>
+            <li><a href="iframe.html">iframe</a></li>
+            <li><a href="ruby.html">ruby</a></li>
+            <li><a href="aside.html">aside</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2 class="subtitle">1. 説明</h2>
+            <p class="explanation">
+                aside 要素は、
+                文書のメインコンテンツと間接的な関係を持つ文書を書く場合に使います。
+                つまり、補足情報や余談、脚注をaside 要素に書きます。<br>
+                サイドバーやコールアウトボックスなどを表現するためによく使われます。
+            </p>
+            <h2 class="subtitle">2. マークアップ例</h2>
+            <h3 class="subsubtitle">2-1. HTML</h3>
+            <pre class="editor">
+                <code>
+&lt;aside&gt;
+    &lt;p&gt;
+        因みに、カレーのお供としてラッシーも飲みました。
+    &lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;
+    僕は昨日、おいしいバターキチンカレーを食べました。
+    生クリームがほどよく効いた、甘口のカレーでした。
+&lt;/p&gt;</code>
+            </pre>
+            <h3 class="subsubtitle">2-2. CSS</h3>
+            <pre class="editor">
+                            <code>
+aside {
+    text-align: left;
+    width: 35%;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #296799;
+}</code>
+                        </pre>
+            <h2 class="subtitle">3. マークアップ結果</h2>
+            <article>
+                <aside>
+                    <p class="explanation">
+                        因みに、カレーのお供としてラッシーも飲みました。
+                    </p>
+                </aside>
+                <p class="explanation">
+                    僕は昨日、おいしいバターキチンカレーを食べました。
+                    生クリームがほどよく効いた、甘口のカレーでした。
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2021 Tomoya Wulf</p>
+    </footer>
+</body>
+
+</html>

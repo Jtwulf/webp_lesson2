@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="author" content="ウルフ 智也">
+    <meta name="description" content="iframe要素の説明ページです。">
+    <title>日本大学文理学部情報科学科 webプログラミング演習2</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="top">
+        <h1>iframe 要素</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="current"><a href="../index.html">Home</a></li>
+            <li><a href="iframe.html">iframe</a></li>
+            <li><a href="ruby.html">ruby</a></li>
+            <li><a href="aside.html">aside</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2 class="subtitle">1. 説明</h2>
+            <p class="explanation">
+                iframe 要素は、webページ内に箱型の領域を設けて、
+                webページ内に別のwebページを埋め込む事が出来ます。
+            </p>
+            <h2 class="subtitle">2. マークアップ例</h2>
+            <h3 class="subsubtitle">2-1. HTMLソースコード</h3>
+            <pre class="editor">
+                <code>
+&lt;iframe width="560"
+height="315"
+src="https://www.youtube.com/embed/G-qWomZ6HP0"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer;
+autoplay;
+clipboard-write;
+encrypted-media;
+gyroscope;
+picture-in-picture"
+allowfullscreen&gt;
+&lt;/iframe&gt;</code>
+            </pre>
+            <h2 class="subtitle">3. マークアップ結果</h2>
+            <p class="explanation">僕のYouTubeチャンネルなので権利の問題はありません。</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G-qWomZ6HP0" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2021 Tomoya Wulf</p>
+    </footer>
+</body>
+
+</html>
